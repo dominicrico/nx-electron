@@ -1,0 +1,621 @@
+{
+  "version": "6.0",
+  "nxVersion": "17.1.3",
+  "deps": {
+    "rxjs": "^7.8.1",
+    "@angular-devkit/core": "16.2.8",
+    "@angular-devkit/schematics": "16.2.8",
+    "@nx/angular": "^17.0.0",
+    "@nx/devkit": "^17.0.0",
+    "@nx/eslint-plugin": "^16.0.0",
+    "@nx/jest": "^17.0.0",
+    "@nx/js": "^17.0.0",
+    "@nx/linter": "^17.0.0",
+    "@nx/node": "^17.0.0",
+    "@nx/plugin": "^17.0.0",
+    "@nx/workspace": "^17.0.0",
+    "@schematics/angular": "16.0.2",
+    "@swc-node/register": "^1.6.5",
+    "@swc/core": "^1.3.59",
+    "@types/jest": "29.5.1",
+    "@types/node": "20.2.3",
+    "@types/webpack": "^5.28.1",
+    "@types/webpack-node-externals": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "5.59.7",
+    "@typescript-eslint/parser": "^5.60.1",
+    "bufferutil": "^4.0.7",
+    "canvas": "^2.11.2",
+    "electron": "^27.1.2",
+    "eslint": "8.41.0",
+    "eslint-config-prettier": "8.8.0",
+    "jest": "29.5.0",
+    "nx": "^17.0.0",
+    "prettier": "2.8.8",
+    "shx": "^0.3.4",
+    "standard-version": "^9.5.0",
+    "ts-jest": "29.1.0",
+    "typescript": "^5.2.0"
+  },
+  "pathMappings": {
+    "@benny/nx-electron/schema/maker": [
+      "node_modules/nx-electron/src/validation/maker.schema.json"
+    ],
+    "nx-electron": [
+      "packages/nx-electron/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "projectFileMap": {
+      "nx-electron-e2e": [
+        {
+          "file": "e2e/nx-electron-e2e/jest.config.js",
+          "hash": "2241159686217525052"
+        },
+        {
+          "file": "e2e/nx-electron-e2e/project.json",
+          "hash": "2509833718567630039"
+        },
+        {
+          "file": "e2e/nx-electron-e2e/tests/nx-electron.spec.ts",
+          "hash": "13017411033427493579",
+          "deps": [
+            "npm:@nx/plugin"
+          ]
+        },
+        {
+          "file": "e2e/nx-electron-e2e/tsconfig.json",
+          "hash": "14373713837864029197"
+        },
+        {
+          "file": "e2e/nx-electron-e2e/tsconfig.spec.json",
+          "hash": "14923180086576996015"
+        }
+      ],
+      "nx-electron": [
+        {
+          "file": "packages/nx-electron/.babelrc",
+          "hash": "1185090046784686875"
+        },
+        {
+          "file": "packages/nx-electron/.eslintrc.json",
+          "hash": "13800677001662881425"
+        },
+        {
+          "file": "packages/nx-electron/.npmignore",
+          "hash": "11405809720904362829"
+        },
+        {
+          "file": "packages/nx-electron/CHANGELOG.md",
+          "hash": "9337928732331187798"
+        },
+        {
+          "file": "packages/nx-electron/README.md",
+          "hash": "5787869576281995394"
+        },
+        {
+          "file": "packages/nx-electron/executors.json",
+          "hash": "12988090484412201857"
+        },
+        {
+          "file": "packages/nx-electron/generators.json",
+          "hash": "13679586389240352967"
+        },
+        {
+          "file": "packages/nx-electron/jest.config.ts",
+          "hash": "7862497601982468575"
+        },
+        {
+          "file": "packages/nx-electron/migrations.json",
+          "hash": "5082294009991752413"
+        },
+        {
+          "file": "packages/nx-electron/package-lock.json",
+          "hash": "10811675589092376156"
+        },
+        {
+          "file": "packages/nx-electron/package.json",
+          "hash": "11452763856121968989",
+          "deps": [
+            "npm:copy-webpack-plugin",
+            "npm:fork-ts-checker-webpack-plugin",
+            "npm:license-webpack-plugin",
+            "npm:strip-json-comments",
+            "npm:terser-webpack-plugin",
+            "npm:tree-kill",
+            "npm:ts-loader",
+            "npm:tsconfig-paths-webpack-plugin",
+            "npm:webpack",
+            "npm:webpack-merge",
+            "npm:webpack-node-externals",
+            "npm:electron",
+            "npm:@nx/workspace"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/project.json",
+          "hash": "2790561388554800523"
+        },
+        {
+          "file": "packages/nx-electron/src/executors/build/executor.compat.ts",
+          "hash": "17894452089610104252",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/executors/build/executor.spec.ts",
+          "hash": "7530059798562955538",
+          "deps": [
+            "npm:@nx/devkit",
+            "npm:@nx/workspace",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/executors/build/executor.ts",
+          "hash": "1907095766530627947",
+          "deps": [
+            "npm:path",
+            "npm:rxjs",
+            "npm:rxjs-for-await",
+            "npm:fs",
+            "npm:@nx/devkit",
+            "npm:@nx/js"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/executors/build/schema.json",
+          "hash": "10125404463595774455"
+        },
+        {
+          "file": "packages/nx-electron/src/executors/execute/executor.compat.ts",
+          "hash": "17894452089610104252",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/executors/execute/executor.spec.ts",
+          "hash": "7709586638280504960",
+          "deps": [
+            "npm:@nx/devkit",
+            "npm:child_process",
+            "npm:tree-kill",
+            [
+              "npm:@nx/devkit",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/executors/execute/executor.ts",
+          "hash": "472313614624335897",
+          "deps": [
+            "npm:@nx/devkit",
+            "npm:child_process",
+            "npm:util",
+            "npm:electron",
+            "npm:tree-kill"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/executors/execute/schema.json",
+          "hash": "14646547417431180822"
+        },
+        {
+          "file": "packages/nx-electron/src/executors/package/executor.compat.ts",
+          "hash": "17894452089610104252",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/executors/package/executor.spec.ts",
+          "hash": "9529628080715973433",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/executors/package/executor.ts",
+          "hash": "8127743104084833536",
+          "deps": [
+            "npm:@nx/devkit",
+            "npm:electron-builder",
+            "npm:fs",
+            "npm:path",
+            "npm:util",
+            "npm:os",
+            "npm:strip-json-comments"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/executors/package/schema.json",
+          "hash": "2486189165019124782"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/init/generator.compat.ts",
+          "hash": "18069094745679226954",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/generators/init/generator.spec.ts",
+          "hash": "7341667773244854087",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/generators/init/generator.ts",
+          "hash": "12592960849664216474",
+          "deps": [
+            "npm:@nx/devkit",
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/generators/init/schema.d.ts",
+          "hash": "6286853409380363567"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/init/schema.json",
+          "hash": "3435462908120720778"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/files/app/src/app/api/main.preload.ts__tmpl__",
+          "hash": "2464496930818970005"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/files/app/src/app/app.ts__tmpl__",
+          "hash": "15694131493368318424"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/files/app/src/app/constants.ts__tmpl__",
+          "hash": "10197100517564013499"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/files/app/src/app/events/electron.events.ts__tmpl__",
+          "hash": "3180188353742070508"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/files/app/src/app/events/squirrel.events.ts__tmpl__",
+          "hash": "13057594273861202011"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/files/app/src/app/events/update.events.ts__tmpl__",
+          "hash": "8046833406260067038"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/files/app/src/app/options/maker.options.json__tmpl__",
+          "hash": "7272781514875596416"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/files/app/src/assets/gitkeep_tmpl_",
+          "hash": "10348631475986258916"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/files/app/src/environments/environment.prod.ts__tmpl__",
+          "hash": "13741310878175322273"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/files/app/src/environments/environment.ts__tmpl__",
+          "hash": "8003310629538750972"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/files/app/src/main.ts__tmpl__",
+          "hash": "7061792215838569148"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/files/app/tsconfig.app.json",
+          "hash": "600779742679655862"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/files/app/tsconfig.json",
+          "hash": "12117157310542304865"
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/generator.compat.ts",
+          "hash": "18069094745679226954",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/generator.spec.ts",
+          "hash": "3840194860465508551",
+          "deps": [
+            "npm:@nx/devkit",
+            "npm:path",
+            "npm:@nx/linter"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/generator.ts",
+          "hash": "13627400919280634272",
+          "deps": [
+            "npm:@nx/devkit",
+            "npm:path",
+            "npm:@nx/linter",
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/schema.d.ts",
+          "hash": "11277359893903234421",
+          "deps": [
+            "npm:@nx/linter"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/generators/nx-electron/schema.json",
+          "hash": "4118648296910584070"
+        },
+        {
+          "file": "packages/nx-electron/src/index.ts",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "packages/nx-electron/src/migrations/update-10-0-0/add-context-isolation.ts",
+          "hash": "3533636992943667942",
+          "deps": [
+            "npm:@angular-devkit/schematics"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/migrations/update-10-0-0/migrate-packager.ts",
+          "hash": "15063195443460493026",
+          "deps": [
+            "npm:@angular-devkit/schematics",
+            "npm:@nx/workspace"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/migrations/update-12-0-0/remove-deprecated-options.spec.ts",
+          "hash": "4561907760665870220",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/migrations/update-12-0-0/remove-deprecated-options.ts",
+          "hash": "16054601871463203944",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/migrations/update-8-0-0/add-packager-config.ts",
+          "hash": "8149328193695303328",
+          "deps": [
+            "npm:@angular-devkit/schematics",
+            "npm:@nx/workspace",
+            "npm:path"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/migrations/update-9-0-0/add-maker-config.ts",
+          "hash": "15930325560818001687",
+          "deps": [
+            "npm:@angular-devkit/schematics",
+            "npm:@nx/workspace",
+            "npm:path"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/utils/config.ts",
+          "hash": "3964901993271928329",
+          "deps": [
+            "npm:webpack",
+            "npm:typescript",
+            "npm:path",
+            "npm:license-webpack-plugin",
+            "npm:fork-ts-checker-webpack-plugin",
+            "npm:tsconfig-paths-webpack-plugin",
+            "npm:copy-webpack-plugin",
+            "npm:@nx/js",
+            [
+              "npm:package.json",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/utils/electron.config.spec.ts",
+          "hash": "16665031538880242473",
+          "deps": [
+            "npm:path"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/utils/electron.config.ts",
+          "hash": "16283466569283693581",
+          "deps": [
+            "npm:@nx/devkit",
+            "npm:webpack",
+            "npm:webpack-merge",
+            "npm:webpack-node-externals",
+            "npm:terser-webpack-plugin"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/utils/generate-package-json.ts",
+          "hash": "3936095082071515801",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/utils/normalize.spec.ts",
+          "hash": "4503185431951317873",
+          "deps": [
+            "npm:fs"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/utils/normalize.ts",
+          "hash": "2416224136964245833",
+          "deps": [
+            "npm:path",
+            "npm:fs"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/utils/run-webpack.ts",
+          "hash": "5301356982622862640",
+          "deps": [
+            "npm:webpack",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/utils/types.ts",
+          "hash": "12417922326220793268"
+        },
+        {
+          "file": "packages/nx-electron/src/utils/versions.ts",
+          "hash": "422391168579178252"
+        },
+        {
+          "file": "packages/nx-electron/src/utils/workspace.ts",
+          "hash": "17766831311359584915",
+          "deps": [
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "packages/nx-electron/src/validation/maker.schema.json",
+          "hash": "11097738222278473303"
+        },
+        {
+          "file": "packages/nx-electron/tsconfig.json",
+          "hash": "12834038490315927699"
+        },
+        {
+          "file": "packages/nx-electron/tsconfig.lib.json",
+          "hash": "3660999668108761731"
+        },
+        {
+          "file": "packages/nx-electron/tsconfig.spec.json",
+          "hash": "11467507841791326307"
+        }
+      ]
+    },
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "8538670905323360137"
+      },
+      {
+        "file": ".github/FUNDING.yml",
+        "hash": "7433508587542552815"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "hash": "2679757224983884383"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "hash": "16753800237612064714"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "6681845154250482029"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "17733650430415207254"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "4637156562308165301"
+      },
+      {
+        "file": "CHANGELOG.md",
+        "hash": "10490227913171622605"
+      },
+      {
+        "file": "CODE_OF_CONDUCT.md",
+        "hash": "14058553939718320263"
+      },
+      {
+        "file": "CONTRIBUTING.md",
+        "hash": "15509347972235819135"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "12649885980860800067"
+      },
+      {
+        "file": "README.md",
+        "hash": "233218200728649610"
+      },
+      {
+        "file": "docs/debugging.md",
+        "hash": "16801873459400667193"
+      },
+      {
+        "file": "docs/migration/migrating.v10.md",
+        "hash": "3434223645242430069"
+      },
+      {
+        "file": "docs/migration/migrating.v8.md",
+        "hash": "6545475439364692812"
+      },
+      {
+        "file": "docs/migration/migrating.v9.md",
+        "hash": "16687187138728786549"
+      },
+      {
+        "file": "docs/packaging.md",
+        "hash": "10190241600761510287"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "10692344265727502540"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "3804138516158554167"
+      },
+      {
+        "file": "nx-electron.png",
+        "hash": "9629925502786868590"
+      },
+      {
+        "file": "nx.json",
+        "hash": "360789636389884613"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "1245634683301190218"
+      },
+      {
+        "file": "package.json",
+        "hash": "13102916735890239383"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "16088922570277978783"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "6667777648262307003"
+      }
+    ]
+  }
+}
