@@ -1,0 +1,69 @@
+{
+  "name": "nx-electron",
+  "version": "16.1.0",
+  "main": "./src/index.js",
+  "description": "Electron Plugin for Nx",
+  "author": "Benny Megidish",
+  "license": "Apache-2.0",
+  "generators": "./generators.json",
+  "schematics": "./generators.json",
+  "executors": "./executors.json",
+  "builders": "./executors.json",
+  "ng-update": {
+    "requirements": {}
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bennymeg/nx-electron.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bennymeg/nx-electron/issues"
+  },
+  "scripts": {
+    "lint": "nx lint nx-electron",
+    "lint:fix": "npm run lint --fix",
+    "test": "nx test nx-electron",
+    "build": "cd ../.. && nx build nx-electron",
+    "release": "standard-version",
+    "release:alpha": "standard-version",
+    "release:beta": "standard-version",
+    "postrelease": "git push --follow-tags && npm run build && cd ../../dist/packages/nx-electron && npm publish",
+    "postrelease:alpha": "git push --follow-tags && npm run build && cd ../../dist/packages/nx-electron && npm publish --tag alpha",
+    "postrelease:beta": "git push --follow-tags && npm run build && cd ../../dist/packages/nx-electron && npm publish --tag beta"
+  },
+  "keywords": [
+    "nx",
+    "electron",
+    "forge",
+    "package",
+    "make",
+    "bundle",
+    "monorepo",
+    "schematics",
+    "generators",
+    "builders",
+    "executors"
+  ],
+  "peerDependencies": {
+    "electron": "*",
+    "@nx/workspace": "^17"
+  },
+  "dependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "electron-builder": "^24.6.3",
+    "fork-ts-checker-webpack-plugin": "^6.5.2",
+    "license-webpack-plugin": "^4.0.2",
+    "rxjs-for-await": "^1.0.0",
+    "strip-json-comments": "^3.1.1",
+    "terser-webpack-plugin": "^5.3.9",
+    "tree-kill": "^1.2.2",
+    "ts-loader": "^9.5.0",
+    "tsconfig-paths-webpack-plugin": "^4.1.0",
+    "webpack": "^5.89.0",
+    "webpack-merge": "^5.10.0"
+  },
+  "devDependencies": {
+    "webpack-node-externals": "^3.0.0"
+  },
+  "type": "commonjs"
+}

@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx build nx-electron",
+    "startTime": "2023-11-28T13:53:33.263Z",
+    "endTime": "2023-11-28T13:53:36.719Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "nx-electron:build",
+      "target": "build",
+      "projectName": "nx-electron",
+      "hash": "3789418150238875930",
+      "startTime": "2023-11-28T13:53:33.277Z",
+      "endTime": "2023-11-28T13:53:36.718Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

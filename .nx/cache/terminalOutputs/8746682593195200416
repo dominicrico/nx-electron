@@ -1,0 +1,42 @@
+Compiling TypeScript files for project "nx-electron"...
+[1m[31m[96mpackages/nx-electron/src/migrations/update-10-0-0/add-context-isolation.ts[0m:[93m1[0m:[93m22[0m - [91merror[0m[90m TS2307: [0mCannot find module '@angular-devkit/schematics' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m import { Rule } from '@angular-devkit/schematics';[39m[22m
+[1m[31m[7m [0m [91m                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96mpackages/nx-electron/src/migrations/update-10-0-0/migrate-packager.ts[0m:[93m1[0m:[93m29[0m - [91merror[0m[90m TS2307: [0mCannot find module '@angular-devkit/schematics' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m import { chain, Rule } from '@angular-devkit/schematics';[39m[22m
+[1m[31m[7m [0m [91m                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96mpackages/nx-electron/src/migrations/update-10-0-0/migrate-packager.ts[0m:[93m2[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"@nx/workspace"' has no exported member 'formatFiles'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m import { formatFiles, updateWorkspace } from '@nx/workspace';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96mpackages/nx-electron/src/migrations/update-10-0-0/migrate-packager.ts[0m:[93m2[0m:[93m23[0m - [91merror[0m[90m TS2305: [0mModule '"@nx/workspace"' has no exported member 'updateWorkspace'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m import { formatFiles, updateWorkspace } from '@nx/workspace';[39m[22m
+[1m[31m[7m [0m [91m                      ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96mpackages/nx-electron/src/migrations/update-8-0-0/add-packager-config.ts[0m:[93m1[0m:[93m35[0m - [91merror[0m[90m TS2307: [0mCannot find module '@angular-devkit/schematics' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m import { chain, Rule, Tree } from '@angular-devkit/schematics';[39m[22m
+[1m[31m[7m [0m [91m                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96mpackages/nx-electron/src/migrations/update-8-0-0/add-packager-config.ts[0m:[93m2[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"@nx/workspace"' has no exported member 'formatFiles'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m import { formatFiles, updateWorkspace } from '@nx/workspace';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96mpackages/nx-electron/src/migrations/update-8-0-0/add-packager-config.ts[0m:[93m2[0m:[93m23[0m - [91merror[0m[90m TS2305: [0mModule '"@nx/workspace"' has no exported member 'updateWorkspace'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m import { formatFiles, updateWorkspace } from '@nx/workspace';[39m[22m
+[1m[31m[7m [0m [91m                      ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96mpackages/nx-electron/src/migrations/update-9-0-0/add-maker-config.ts[0m:[93m1[0m:[93m35[0m - [91merror[0m[90m TS2307: [0mCannot find module '@angular-devkit/schematics' or its corresponding type declarations.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m1[0m import { chain, Rule, Tree } from '@angular-devkit/schematics';[39m[22m
+[1m[31m[7m [0m [91m                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96mpackages/nx-electron/src/migrations/update-9-0-0/add-maker-config.ts[0m:[93m2[0m:[93m10[0m - [91merror[0m[90m TS2305: [0mModule '"@nx/workspace"' has no exported member 'formatFiles'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m import { formatFiles, updateWorkspace } from '@nx/workspace';[39m[22m
+[1m[31m[7m [0m [91m         ~~~~~~~~~~~[0m[39m[22m
+[1m[31m[96mpackages/nx-electron/src/migrations/update-9-0-0/add-maker-config.ts[0m:[93m2[0m:[93m23[0m - [91merror[0m[90m TS2305: [0mModule '"@nx/workspace"' has no exported member 'updateWorkspace'.[39m[22m
+[1m[31m[39m[22m
+[1m[31m[7m2[0m import { formatFiles, updateWorkspace } from '@nx/workspace';[39m[22m
+[1m[31m[7m [0m [91m                      ~~~~~~~~~~~~~~~[0m[39m[22m
+[1m[31m[39m[22m

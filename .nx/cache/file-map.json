@@ -3,9 +3,6 @@
   "nxVersion": "17.1.3",
   "deps": {
     "rxjs": "^7.8.1",
-    "@angular-devkit/core": "16.2.8",
-    "@angular-devkit/schematics": "16.2.8",
-    "@nx/angular": "^17.0.0",
     "@nx/devkit": "^17.0.0",
     "@nx/eslint-plugin": "^16.0.0",
     "@nx/jest": "^17.0.0",
@@ -14,7 +11,6 @@
     "@nx/node": "^17.0.0",
     "@nx/plugin": "^17.0.0",
     "@nx/workspace": "^17.0.0",
-    "@schematics/angular": "16.0.2",
     "@swc-node/register": "^1.6.5",
     "@swc/core": "^1.3.59",
     "@types/jest": "29.5.1",
@@ -46,6 +42,144 @@
   },
   "nxJsonPlugins": [],
   "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "7663861978715868291"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "8538670905323360137"
+      },
+      {
+        "file": ".github/FUNDING.yml",
+        "hash": "7433508587542552815"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/bug_report.md",
+        "hash": "2679757224983884383"
+      },
+      {
+        "file": ".github/ISSUE_TEMPLATE/feature_request.md",
+        "hash": "16753800237612064714"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "6681845154250482029"
+      },
+      {
+        "file": ".nx/cache/d/daemon.log",
+        "hash": "9632239207088058763"
+      },
+      {
+        "file": ".nx/cache/d/server-process.json",
+        "hash": "10224017597427412877"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "12510504084885737074"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "13219086713164224894"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "3715265146134847298"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "13547703889557690336"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "17733650430415207254"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "4637156562308165301"
+      },
+      {
+        "file": "CHANGELOG.md",
+        "hash": "10490227913171622605"
+      },
+      {
+        "file": "CODE_OF_CONDUCT.md",
+        "hash": "14058553939718320263"
+      },
+      {
+        "file": "CONTRIBUTING.md",
+        "hash": "15509347972235819135"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "12649885980860800067"
+      },
+      {
+        "file": "README.md",
+        "hash": "233218200728649610"
+      },
+      {
+        "file": "docs/debugging.md",
+        "hash": "16801873459400667193"
+      },
+      {
+        "file": "docs/migration/migrating.v10.md",
+        "hash": "3434223645242430069"
+      },
+      {
+        "file": "docs/migration/migrating.v8.md",
+        "hash": "6545475439364692812"
+      },
+      {
+        "file": "docs/migration/migrating.v9.md",
+        "hash": "16687187138728786549"
+      },
+      {
+        "file": "docs/packaging.md",
+        "hash": "10190241600761510287"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "10692344265727502540"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "3804138516158554167"
+      },
+      {
+        "file": "nx-electron.png",
+        "hash": "9629925502786868590"
+      },
+      {
+        "file": "nx.json",
+        "hash": "360789636389884613"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "1882305130507980540"
+      },
+      {
+        "file": "package.json",
+        "hash": "16383610346410571571"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "16088922570277978783"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "6667777648262307003"
+      }
+    ],
     "projectFileMap": {
       "nx-electron-e2e": [
         {
@@ -106,28 +240,16 @@
           "hash": "7862497601982468575"
         },
         {
-          "file": "packages/nx-electron/migrations.json",
-          "hash": "5082294009991752413"
-        },
-        {
           "file": "packages/nx-electron/package-lock.json",
-          "hash": "10811675589092376156"
+          "hash": "17531696053661077046"
         },
         {
           "file": "packages/nx-electron/package.json",
-          "hash": "11452763856121968989",
+          "hash": "16307988968277619601",
           "deps": [
-            "npm:copy-webpack-plugin",
-            "npm:fork-ts-checker-webpack-plugin",
-            "npm:license-webpack-plugin",
             "npm:strip-json-comments",
             "npm:terser-webpack-plugin",
-            "npm:tree-kill",
-            "npm:ts-loader",
-            "npm:tsconfig-paths-webpack-plugin",
             "npm:webpack",
-            "npm:webpack-merge",
-            "npm:webpack-node-externals",
             "npm:electron",
             "npm:@nx/workspace"
           ]
@@ -502,120 +624,6 @@
           "hash": "11467507841791326307"
         }
       ]
-    },
-    "nonProjectFiles": [
-      {
-        "file": ".editorconfig",
-        "hash": "5443105041930014821"
-      },
-      {
-        "file": ".eslintignore",
-        "hash": "7663861978715868291"
-      },
-      {
-        "file": ".eslintrc.json",
-        "hash": "8538670905323360137"
-      },
-      {
-        "file": ".github/FUNDING.yml",
-        "hash": "7433508587542552815"
-      },
-      {
-        "file": ".github/ISSUE_TEMPLATE/bug_report.md",
-        "hash": "2679757224983884383"
-      },
-      {
-        "file": ".github/ISSUE_TEMPLATE/feature_request.md",
-        "hash": "16753800237612064714"
-      },
-      {
-        "file": ".gitignore",
-        "hash": "6681845154250482029"
-      },
-      {
-        "file": ".prettierignore",
-        "hash": "17733650430415207254"
-      },
-      {
-        "file": ".prettierrc",
-        "hash": "16267754514737964994"
-      },
-      {
-        "file": ".vscode/extensions.json",
-        "hash": "4637156562308165301"
-      },
-      {
-        "file": "CHANGELOG.md",
-        "hash": "10490227913171622605"
-      },
-      {
-        "file": "CODE_OF_CONDUCT.md",
-        "hash": "14058553939718320263"
-      },
-      {
-        "file": "CONTRIBUTING.md",
-        "hash": "15509347972235819135"
-      },
-      {
-        "file": "LICENSE",
-        "hash": "12649885980860800067"
-      },
-      {
-        "file": "README.md",
-        "hash": "233218200728649610"
-      },
-      {
-        "file": "docs/debugging.md",
-        "hash": "16801873459400667193"
-      },
-      {
-        "file": "docs/migration/migrating.v10.md",
-        "hash": "3434223645242430069"
-      },
-      {
-        "file": "docs/migration/migrating.v8.md",
-        "hash": "6545475439364692812"
-      },
-      {
-        "file": "docs/migration/migrating.v9.md",
-        "hash": "16687187138728786549"
-      },
-      {
-        "file": "docs/packaging.md",
-        "hash": "10190241600761510287"
-      },
-      {
-        "file": "jest.config.ts",
-        "hash": "10692344265727502540"
-      },
-      {
-        "file": "jest.preset.js",
-        "hash": "3804138516158554167"
-      },
-      {
-        "file": "nx-electron.png",
-        "hash": "9629925502786868590"
-      },
-      {
-        "file": "nx.json",
-        "hash": "360789636389884613"
-      },
-      {
-        "file": "package-lock.json",
-        "hash": "1245634683301190218"
-      },
-      {
-        "file": "package.json",
-        "hash": "13102916735890239383"
-      },
-      {
-        "file": "tools/tsconfig.tools.json",
-        "hash": "16088922570277978783"
-      },
-      {
-        "file": "tsconfig.base.json",
-        "hash": "6667777648262307003"
-      }
-    ]
+    }
   }
 }
